@@ -1,0 +1,1021 @@
+[
+  {
+    "question_id": 1,
+    "question_code": "q01_spol",
+    "section": "Demografski podaci o ispitaniku",
+    "question_text": "Spol vlasnika/menadžera poslovnog pothvata",
+    "response_type": "single_select",
+    "scale": null,
+    "encoding": "one_hot",
+    "feature_names": [
+      "q01_spol__musko",
+      "q01_spol__zensko"
+    ],
+    "feature_labels": {
+      "q01_spol__musko": "muško",
+      "q01_spol__zensko": "žensko"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "One-hot kodiranje kategorijske varijable."
+  },
+  {
+    "question_id": 2,
+    "question_code": "q02_generacija",
+    "section": "Demografski podaci o ispitaniku",
+    "question_text": "Datum rođenja vlasnika/menadžera poslovnog pothvata",
+    "response_type": "single_select",
+    "scale": null,
+    "encoding": "one_hot",
+    "feature_names": [
+      "q02_generacija__boomers",
+      "q02_generacija__gen_x",
+      "q02_generacija__gen_y",
+      "q02_generacija__gen_alpha"
+    ],
+    "feature_labels": {
+      "q02_generacija__boomers": "1936-1959 (baby boomers)",
+      "q02_generacija__gen_x": "1960-1979 (X generacija)",
+      "q02_generacija__gen_y": "1980-1996 (Y generacija)",
+      "q02_generacija__gen_alpha": "1997-2010 (Alpha generacija)"
+    },
+    "has_other_option": true,
+    "other_indicator_feature": "q02_generacija__other_selected",
+    "other_text_feature": "q02_generacija__other_text",
+    "notes": "One-hot kodiranje; opcija Other razdvojena na indikator i dodatni tekst."
+  },
+  {
+    "question_id": 3,
+    "question_code": "q03_pravni_oblik",
+    "section": "Demografski podaci o ispitaniku",
+    "question_text": "Poslovni pothvat je registriran kao",
+    "response_type": "single_select",
+    "scale": null,
+    "encoding": "one_hot",
+    "feature_names": [
+      "q03_pravni_oblik__doo_jdoo",
+      "q03_pravni_oblik__javno_poduzece"
+    ],
+    "feature_labels": {
+      "q03_pravni_oblik__doo_jdoo": "d.o.o. ili j.d.o.o.",
+      "q03_pravni_oblik__javno_poduzece": "javno poduzeće"
+    },
+    "has_other_option": true,
+    "other_indicator_feature": "q03_pravni_oblik__other_selected",
+    "other_text_feature": "q03_pravni_oblik__other_text",
+    "notes": "One-hot kodiranje; opcija Other razdvojena na indikator i dodatni tekst."
+  },
+  {
+    "question_id": 4,
+    "question_code": "q04_sjediste",
+    "section": "Demografski podaci o ispitaniku",
+    "question_text": "Sjedište poslovnog pothvata",
+    "response_type": "text_or_numeric",
+    "scale": null,
+    "encoding": "text_manual_review",
+    "feature_names": [
+      "q04_sjediste"
+    ],
+    "feature_labels": {
+      "q04_sjediste": "Sjedište poslovnog pothvata"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "Tekstualni odgovor; zahtijeva ručnu obradu, kategorizaciju ili NLP."
+  },
+  {
+    "question_id": 5,
+    "question_code": "q05_organizacijska_struktura",
+    "section": "Demografski podaci o ispitaniku",
+    "question_text": "Organizacijska struktura",
+    "response_type": "single_select",
+    "scale": null,
+    "encoding": "one_hot",
+    "feature_names": [
+      "q05_organizacijska_struktura__hrvatsko_vlasnistvo",
+      "q05_organizacijska_struktura__uglavnom_hrvatsko",
+      "q05_organizacijska_struktura__mijesano_50_50",
+      "q05_organizacijska_struktura__uglavnom_strano",
+      "q05_organizacijska_struktura__strano_vlasnistvo"
+    ],
+    "feature_labels": {
+      "q05_organizacijska_struktura__hrvatsko_vlasnistvo": "u vlasništvu hrvatskih državljana",
+      "q05_organizacijska_struktura__uglavnom_hrvatsko": "uglavnom u vlasništvu hrvatskih državljana",
+      "q05_organizacijska_struktura__mijesano_50_50": "u podjednakom vlasništvu hrvatskih i stranih državljana (50%-50%)",
+      "q05_organizacijska_struktura__uglavnom_strano": "uglavnom u vlasništvu stranaca",
+      "q05_organizacijska_struktura__strano_vlasnistvo": "u potpunom vlasništvu stranih državljana"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "One-hot kodiranje kategorijske varijable."
+  },
+  {
+    "question_id": 6,
+    "question_code": "q06_godina_osnutka",
+    "section": "Demografski podaci o ispitaniku",
+    "question_text": "Godina osnutka",
+    "response_type": "text_or_numeric",
+    "scale": null,
+    "encoding": "numeric_passthrough",
+    "feature_names": [
+      "q06_godina_osnutka"
+    ],
+    "feature_labels": {
+      "q06_godina_osnutka": "Godina osnutka"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "Numerička varijabla."
+  },
+  {
+    "question_id": 7,
+    "question_code": "q07_broj_zaposlenika",
+    "section": "Demografski podaci o ispitaniku",
+    "question_text": "Broj zaposlenika",
+    "response_type": "text_or_numeric",
+    "scale": null,
+    "encoding": "numeric_passthrough",
+    "feature_names": [
+      "q07_broj_zaposlenika"
+    ],
+    "feature_labels": {
+      "q07_broj_zaposlenika": "Broj zaposlenika"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "Numerička varijabla."
+  },
+  {
+    "question_id": 8,
+    "question_code": "q08_velicina_subjekta",
+    "section": "Demografski podaci o ispitaniku",
+    "question_text": "Veličina poslovnog subjekta",
+    "response_type": "single_select",
+    "scale": null,
+    "encoding": "one_hot",
+    "feature_names": [
+      "q08_velicina_subjekta__mikro",
+      "q08_velicina_subjekta__mali",
+      "q08_velicina_subjekta__srednji",
+      "q08_velicina_subjekta__veliki"
+    ],
+    "feature_labels": {
+      "q08_velicina_subjekta__mikro": "mikro",
+      "q08_velicina_subjekta__mali": "mali",
+      "q08_velicina_subjekta__srednji": "srednji",
+      "q08_velicina_subjekta__veliki": "veliki"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "One-hot kodiranje kategorijske varijable."
+  },
+  {
+    "question_id": 9,
+    "question_code": "q09_sektor",
+    "section": "Demografski podaci o ispitaniku",
+    "question_text": "Kojem sektoru pripada poslovni subjekt",
+    "response_type": "single_select",
+    "scale": null,
+    "encoding": "one_hot",
+    "feature_names": [
+      "q09_sektor__administrativne_i_usluzne_djelatnosti",
+      "q09_sektor__rudarstvo",
+      "q09_sektor__ostale_usluge",
+      "q09_sektor__gradjevina",
+      "q09_sektor__proizvodnja",
+      "q09_sektor__zdravlje_i_socijalni_rad",
+      "q09_sektor__kucna_radinost_ili_obiteljsko_poljoprivredno",
+      "q09_sektor__informacije_i_komunikacije",
+      "q09_sektor__nekretnine",
+      "q09_sektor__trgovina",
+      "q09_sektor__osiguranje",
+      "q09_sektor__umjetnost_zabava_slobodno_vrijeme",
+      "q09_sektor__poljoprivreda_sumarstvo_ribarstvo",
+      "q09_sektor__obrazovanje",
+      "q09_sektor__financijske_usluge",
+      "q09_sektor__profesionalne_tehnicke_usluge",
+      "q09_sektor__usluge_smjestaja",
+      "q09_sektor__dostava_skladistenje",
+      "q09_sektor__extraterritorial_organization",
+      "q09_sektor__energenti",
+      "q09_sektor__upravljanje_vodama"
+    ],
+    "feature_labels": {
+      "q09_sektor__administrativne_i_usluzne_djelatnosti": "administrativne i uslužne djelatnosti",
+      "q09_sektor__rudarstvo": "rudarstvo",
+      "q09_sektor__ostale_usluge": "ostale usluge",
+      "q09_sektor__gradjevina": "građevina",
+      "q09_sektor__proizvodnja": "proizvodnja",
+      "q09_sektor__zdravlje_i_socijalni_rad": "zdravlje i socijalni rad",
+      "q09_sektor__kucna_radinost_ili_obiteljsko_poljoprivredno": "kućna radinost ili obiteljsko poljoprivredno gospodarstvo",
+      "q09_sektor__informacije_i_komunikacije": "informacije i komunikacije",
+      "q09_sektor__nekretnine": "nekretnine",
+      "q09_sektor__trgovina": "trgovina",
+      "q09_sektor__osiguranje": "osiguranje",
+      "q09_sektor__umjetnost_zabava_slobodno_vrijeme": "umjetnost, zabava, slobodno vrijeme",
+      "q09_sektor__poljoprivreda_sumarstvo_ribarstvo": "poljoprivreda, šumarstvo, ribarstvo",
+      "q09_sektor__obrazovanje": "obrazovanje",
+      "q09_sektor__financijske_usluge": "financijske usluge",
+      "q09_sektor__profesionalne_tehnicke_usluge": "profesionalne, tehničke usluge",
+      "q09_sektor__usluge_smjestaja": "usluge smještaja",
+      "q09_sektor__dostava_skladistenje": "dostava, skladištenje",
+      "q09_sektor__extraterritorial_organization": "extraterritorial organization",
+      "q09_sektor__energenti": "energenti",
+      "q09_sektor__upravljanje_vodama": "upravljanje vodama"
+    },
+    "has_other_option": true,
+    "other_indicator_feature": "q09_sektor__other_selected",
+    "other_text_feature": "q09_sektor__other_text",
+    "notes": "One-hot kodiranje; opcija Other razdvojena na indikator i dodatni tekst."
+  },
+  {
+    "question_id": 10,
+    "question_code": "q10_mjerljivi_indikatori",
+    "section": "Demografski podaci o ispitaniku",
+    "question_text": "Ima li poslovni subjekt mjerljive indikatore poslovanja?",
+    "response_type": "single_select",
+    "scale": null,
+    "encoding": "one_hot",
+    "feature_names": [
+      "q10_mjerljivi_indikatori__da",
+      "q10_mjerljivi_indikatori__ne"
+    ],
+    "feature_labels": {
+      "q10_mjerljivi_indikatori__da": "da",
+      "q10_mjerljivi_indikatori__ne": "ne"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "One-hot kodiranje kategorijske varijable."
+  },
+  {
+    "question_id": 11,
+    "question_code": "q11_definicija_odrzivosti",
+    "section": "Održivost poslovnih operacija",
+    "question_text": "Molim vas, definirajte održivost pomoću tri pojma",
+    "response_type": "text_or_numeric",
+    "scale": null,
+    "encoding": "text_manual_review",
+    "feature_names": [
+      "q11_definicija_odrzivosti"
+    ],
+    "feature_labels": {
+      "q11_definicija_odrzivosti": "Molim vas, definirajte održivost pomoću tri pojma"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "Tekstualni odgovor; zahtijeva ručnu obradu, kategorizaciju ili NLP."
+  },
+  {
+    "question_id": 12,
+    "question_code": "q12_eksterna_primarna_odrzivost",
+    "section": "Održivost poslovnih operacija",
+    "question_text": "Obzirom na eksterne karakteristike vašeg poslovnog subjekta, što je za vas primarno održivost",
+    "response_type": "single_select",
+    "scale": null,
+    "encoding": "one_hot",
+    "feature_names": [
+      "q12_eksterna_primarna_odrzivost__ekonomska_odrzivost_ucinkovitost",
+      "q12_eksterna_primarna_odrzivost__odrzivost_okolisa_zastita_okolisa",
+      "q12_eksterna_primarna_odrzivost__drustvena_odrzivost_javna_dobra_blagostanje",
+      "q12_eksterna_primarna_odrzivost__sve_prethodno_navedeno_ucinkovitost_zastita"
+    ],
+    "feature_labels": {
+      "q12_eksterna_primarna_odrzivost__ekonomska_odrzivost_ucinkovitost": "ekonomska održivost (učinkovitost)",
+      "q12_eksterna_primarna_odrzivost__odrzivost_okolisa_zastita_okolisa": "održivost okoliša (zaštita okoliša)",
+      "q12_eksterna_primarna_odrzivost__drustvena_odrzivost_javna_dobra_blagostanje": "društvena održivost (javna dobra, blagostanje)",
+      "q12_eksterna_primarna_odrzivost__sve_prethodno_navedeno_ucinkovitost_zastita": "sve prethodno navedeno (učinkovitost, zaštita okoliša i blagostanje)"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "One-hot kodiranje kategorijske varijable."
+  },
+  {
+    "question_id": 13,
+    "question_code": "q13_interna_primarna_odrzivost",
+    "section": "Održivost poslovnih operacija",
+    "question_text": "Obzirom na interne karakteristike vašeg poslovnog subjekta, što je za vas primarno održivost",
+    "response_type": "single_select",
+    "scale": null,
+    "encoding": "one_hot",
+    "feature_names": [
+      "q13_interna_primarna_odrzivost__dugorocni_ciljevi",
+      "q13_interna_primarna_odrzivost__mogucnost_cjelozivotnog_ucenja",
+      "q13_interna_primarna_odrzivost__odrzivost_npr_fleksibilnost",
+      "q13_interna_primarna_odrzivost__agilnost_npr_adaptabilnost"
+    ],
+    "feature_labels": {
+      "q13_interna_primarna_odrzivost__dugorocni_ciljevi": "dugoročni ciljevi",
+      "q13_interna_primarna_odrzivost__mogucnost_cjelozivotnog_ucenja": "mogućnost cjeloživotnog učenja",
+      "q13_interna_primarna_odrzivost__odrzivost_npr_fleksibilnost": "održivost (npr. fleksibilnost)",
+      "q13_interna_primarna_odrzivost__agilnost_npr_adaptabilnost": "agilnost (npr. adaptabilnost)"
+    },
+    "has_other_option": true,
+    "other_indicator_feature": "q13_interna_primarna_odrzivost__other_selected",
+    "other_text_feature": "q13_interna_primarna_odrzivost__other_text",
+    "notes": "One-hot kodiranje; opcija Other razdvojena na indikator i dodatni tekst."
+  },
+  {
+    "question_id": 14,
+    "question_code": "q14_odrzivost_u_strategiji",
+    "section": "Održivost poslovnih operacija",
+    "question_text": "Smatrate li kako je neophodno uključiti održive aktivnosti i napore (ekonomske, okolišne i društvene) u organizacijsku misiju, viziju, strategiju i ciljeve?",
+    "response_type": "single_select",
+    "scale": null,
+    "encoding": "one_hot",
+    "feature_names": [
+      "q14_odrzivost_u_strategiji__da",
+      "q14_odrzivost_u_strategiji__ne"
+    ],
+    "feature_labels": {
+      "q14_odrzivost_u_strategiji__da": "da",
+      "q14_odrzivost_u_strategiji__ne": "ne"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "One-hot kodiranje kategorijske varijable."
+  },
+  {
+    "question_id": 15,
+    "question_code": "q15_pritisak_na_odrzivost",
+    "section": "Održivost poslovnih operacija",
+    "question_text": "Osjećate li pritisak ………… da posvetite više pozornosti održivosti u svom poslovnom pothvatu?",
+    "response_type": "matrix_single_choice",
+    "scale": null,
+    "encoding": "matrix_binary",
+    "feature_names": [
+      "q15_pritisak_na_odrzivost__pravni",
+      "q15_pritisak_na_odrzivost__potrosaci",
+      "q15_pritisak_na_odrzivost__konkurencija",
+      "q15_pritisak_na_odrzivost__okruzenje",
+      "q15_pritisak_na_odrzivost__zaposlenici",
+      "q15_pritisak_na_odrzivost__banka"
+    ],
+    "feature_labels": {
+      "q15_pritisak_na_odrzivost__pravni": "pravni",
+      "q15_pritisak_na_odrzivost__potrosaci": "od potrošača",
+      "q15_pritisak_na_odrzivost__konkurencija": "od konkurencije",
+      "q15_pritisak_na_odrzivost__okruzenje": "od okruženja",
+      "q15_pritisak_na_odrzivost__zaposlenici": "od zaposlenika",
+      "q15_pritisak_na_odrzivost__banka": "od banke"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "Svaki red matrice postaje zaseban binarni stupac (da/ne).",
+    "value_domain": [
+      0,
+      1
+    ]
+  },
+  {
+    "question_id": 16,
+    "question_code": "q16_mjerenje_uspjeha",
+    "section": "Održivost poslovnih operacija",
+    "question_text": "Kako mjerite uspjeh svoje organizacije/poslovanja?",
+    "response_type": "single_select",
+    "scale": null,
+    "encoding": "one_hot",
+    "feature_names": [
+      "q16_mjerenje_uspjeha__neto_profit",
+      "q16_mjerenje_uspjeha__profit_i_odrzivi_ciljevi"
+    ],
+    "feature_labels": {
+      "q16_mjerenje_uspjeha__neto_profit": "kroz ostvareni neto profit na kraju poslovne godine",
+      "q16_mjerenje_uspjeha__profit_i_odrzivi_ciljevi": "osim kroz ostvareni neto profit važno nam je i koliko smo ostvarili održivih ciljeva (ekonomskih, okolišnih, društvenih)"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "One-hot kodiranje kategorijske varijable."
+  },
+  {
+    "question_id": 17,
+    "question_code": "q17_izvjestaj_o_odrzivosti",
+    "section": "Održivost poslovnih operacija",
+    "question_text": "Jeste li čuli za izvještaj o održivosti?",
+    "response_type": "multi_select",
+    "scale": null,
+    "encoding": "multi_hot",
+    "feature_names": [
+      "q17_izvjestaj_o_odrzivosti__ne",
+      "q17_izvjestaj_o_odrzivosti__da_zakonodavac_regulira",
+      "q17_izvjestaj_o_odrzivosti__da_sankcije",
+      "q17_izvjestaj_o_odrzivosti__da_doprinos_konkurentnosti",
+      "q17_izvjestaj_o_odrzivosti__da_nije_primjenjivo"
+    ],
+    "feature_labels": {
+      "q17_izvjestaj_o_odrzivosti__ne": "ne",
+      "q17_izvjestaj_o_odrzivosti__da_zakonodavac_regulira": "da, Zakonodavac zasebno regulira troškove održavanja okliša i društvene odgovornosti",
+      "q17_izvjestaj_o_odrzivosti__da_sankcije": "da, ukoliko to ne ispunimo bit ćemo sankcionirani",
+      "q17_izvjestaj_o_odrzivosti__da_doprinos_konkurentnosti": "da, izvještaj o održivosti predstavlja doprinos mog poslovnog subjekta ciljevima održiva razvoja, koji se očituju u jačanju konkurentnosti",
+      "q17_izvjestaj_o_odrzivosti__da_nije_primjenjivo": "da, ali se to ne odnosi na moje poslovanje"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "Svaka označena opcija postaje zaseban binarni stupac."
+  },
+  {
+    "question_id": 18,
+    "question_code": "q18_zakonodavni_utjecaj_sdg",
+    "section": "Održivost poslovnih operacija",
+    "question_text": "Kada bi Zakonodavac zahtjevao uključivanje ciljeva održivog razvoja u vaše poslovanje, bi li to utjecalo na vaš rezultat?",
+    "response_type": "single_select",
+    "scale": null,
+    "encoding": "one_hot",
+    "feature_names": [
+      "q18_zakonodavni_utjecaj_sdg__da",
+      "q18_zakonodavni_utjecaj_sdg__ne"
+    ],
+    "feature_labels": {
+      "q18_zakonodavni_utjecaj_sdg__da": "da",
+      "q18_zakonodavni_utjecaj_sdg__ne": "ne"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "One-hot kodiranje kategorijske varijable."
+  },
+  {
+    "question_id": 19,
+    "question_code": "q19_elementi_odrzivosti",
+    "section": "Upravljački aspekti održivosti",
+    "question_text": "Ima li vaša organizacija/poslovni subjekt….?",
+    "response_type": "multi_select",
+    "scale": null,
+    "encoding": "multi_hot",
+    "feature_names": [
+      "q19_elementi_odrzivosti__iso_9001",
+      "q19_elementi_odrzivosti__iso_14001",
+      "q19_elementi_odrzivosti__ciljevi_drustvene_odgovornosti",
+      "q19_elementi_odrzivosti__nista_od_navedenog"
+    ],
+    "feature_labels": {
+      "q19_elementi_odrzivosti__iso_9001": "ISO 9001 certifikat",
+      "q19_elementi_odrzivosti__iso_14001": "ISO 14001 certifikat",
+      "q19_elementi_odrzivosti__ciljevi_drustvene_odgovornosti": "ciljeve i konkretne aktivnosti društvene odgovornosti",
+      "q19_elementi_odrzivosti__nista_od_navedenog": "nemamo ništa od navedenog"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "Svaka označena opcija postaje zaseban binarni stupac."
+  },
+  {
+    "question_id": 20,
+    "question_code": "q20_vaznost_ekonomske_odrzivosti",
+    "section": "Upravljački aspekti održivosti",
+    "question_text": "Koliko je važna ekonomska održivost (učinkovitost) za vaš poslovni subjekt?",
+    "response_type": "single_select",
+    "scale": "likert_1_5",
+    "encoding": "ordinal_1_5",
+    "feature_names": [
+      "q20_vaznost_ekonomske_odrzivosti"
+    ],
+    "feature_labels": {
+      "q20_vaznost_ekonomske_odrzivosti": "Koliko je važna ekonomska održivost (učinkovitost) za vaš poslovni subjekt?"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "Likert 1-5; kodirati kao ordinalnu numeričku varijablu.",
+    "value_domain": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "question_id": 21,
+    "question_code": "q21_vaznost_okolisne_odrzivosti",
+    "section": "Upravljački aspekti održivosti",
+    "question_text": "Koliko je važna okolišna održivost (zaštita okoliša) za vaš poslovni subjekt?",
+    "response_type": "single_select",
+    "scale": "likert_1_5",
+    "encoding": "ordinal_1_5",
+    "feature_names": [
+      "q21_vaznost_okolisne_odrzivosti"
+    ],
+    "feature_labels": {
+      "q21_vaznost_okolisne_odrzivosti": "Koliko je važna okolišna održivost (zaštita okoliša) za vaš poslovni subjekt?"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "Likert 1-5; kodirati kao ordinalnu numeričku varijablu.",
+    "value_domain": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "question_id": 22,
+    "question_code": "q22_vaznost_drustvene_odrzivosti",
+    "section": "Upravljački aspekti održivosti",
+    "question_text": "Koliko je važna društvena održivost javna (dobra i blagostanje) za vaš poslovni subjekt?",
+    "response_type": "single_select",
+    "scale": "likert_1_5",
+    "encoding": "ordinal_1_5",
+    "feature_names": [
+      "q22_vaznost_drustvene_odrzivosti"
+    ],
+    "feature_labels": {
+      "q22_vaznost_drustvene_odrzivosti": "Koliko je važna društvena održivost javna (dobra i blagostanje) za vaš poslovni subjekt?"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "Likert 1-5; kodirati kao ordinalnu numeričku varijablu.",
+    "value_domain": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "question_id": 23,
+    "question_code": "q23_odrzive_vrijednosti_gdje",
+    "section": "Upravljački aspekti održivosti",
+    "question_text": "Što mislite gdje se najčešće očituju održive vrijednosti u vašem poslovnom subjektu?",
+    "response_type": "multi_select",
+    "scale": null,
+    "encoding": "multi_hot",
+    "feature_names": [
+      "q23_odrzive_vrijednosti_gdje__strategija",
+      "q23_odrzive_vrijednosti_gdje__etika_menadzmenta",
+      "q23_odrzive_vrijednosti_gdje__odnos_prema_zaposlenicima",
+      "q23_odrzive_vrijednosti_gdje__odnos_prema_partnerima",
+      "q23_odrzive_vrijednosti_gdje__volonterske_akcije_i_drustvena_odgovornost"
+    ],
+    "feature_labels": {
+      "q23_odrzive_vrijednosti_gdje__strategija": "u strategiji poslovnog subjekta",
+      "q23_odrzive_vrijednosti_gdje__etika_menadzmenta": "u etičnom ponašanju menadžmenta",
+      "q23_odrzive_vrijednosti_gdje__odnos_prema_zaposlenicima": "u odnosu prema zaposlenicima",
+      "q23_odrzive_vrijednosti_gdje__odnos_prema_partnerima": "u odnosu prema poslovnim partnerima",
+      "q23_odrzive_vrijednosti_gdje__volonterske_akcije_i_drustvena_odgovornost": "sudjelujemo u volonterskim akcijama i društveno smo odgovorni"
+    },
+    "has_other_option": true,
+    "other_indicator_feature": "q23_odrzive_vrijednosti_gdje__other_selected",
+    "other_text_feature": "q23_odrzive_vrijednosti_gdje__other_text",
+    "notes": "Multi-hot kodiranje; opcija Other razdvojena na indikator i dodatni tekst."
+  },
+  {
+    "question_id": 24,
+    "question_code": "q24_mjerenje_ciljeva_odrzivosti",
+    "section": "Upravljački aspekti održivosti",
+    "question_text": "Mjerite li ostvarene ciljeve održivosti?",
+    "response_type": "single_select",
+    "scale": null,
+    "encoding": "one_hot",
+    "feature_names": [
+      "q24_mjerenje_ciljeva_odrzivosti__da",
+      "q24_mjerenje_ciljeva_odrzivosti__ne"
+    ],
+    "feature_labels": {
+      "q24_mjerenje_ciljeva_odrzivosti__da": "da",
+      "q24_mjerenje_ciljeva_odrzivosti__ne": "ne"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "One-hot kodiranje kategorijske varijable."
+  },
+  {
+    "question_id": 25,
+    "question_code": "q25_primjer_ciljeva_odrzivosti",
+    "section": "Upravljački aspekti održivosti",
+    "question_text": "Ako ste na prethodno pitanje odgovorili potvrdno, molim navedite primjer...",
+    "response_type": "text_or_numeric",
+    "scale": null,
+    "encoding": "text_manual_review",
+    "feature_names": [
+      "q25_primjer_ciljeva_odrzivosti"
+    ],
+    "feature_labels": {
+      "q25_primjer_ciljeva_odrzivosti": "Ako ste na prethodno pitanje odgovorili potvrdno, molim navedite primjer..."
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "Tekstualni odgovor; zahtijeva ručnu obradu, kategorizaciju ili NLP."
+  },
+  {
+    "question_id": 26,
+    "question_code": "q26_najvisa_pozicija_za_odrzivost",
+    "section": "Upravljački aspekti održivosti",
+    "question_text": "Tko je, po hijerarhiji, najviše rangirana pozicija koja brine o održivosti vašeg poslovanja?",
+    "response_type": "single_select",
+    "scale": null,
+    "encoding": "one_hot",
+    "feature_names": [
+      "q26_najvisa_pozicija_za_odrzivost__top_menadzment",
+      "q26_najvisa_pozicija_za_odrzivost__srednji_menadzment",
+      "q26_najvisa_pozicija_za_odrzivost__odjel_menadzmenta",
+      "q26_najvisa_pozicija_za_odrzivost__menadzer",
+      "q26_najvisa_pozicija_za_odrzivost__vlasnik",
+      "q26_najvisa_pozicija_za_odrzivost__subordinate",
+      "q26_najvisa_pozicija_za_odrzivost__nema_pozicije"
+    ],
+    "feature_labels": {
+      "q26_najvisa_pozicija_za_odrzivost__top_menadzment": "top menadžment",
+      "q26_najvisa_pozicija_za_odrzivost__srednji_menadzment": "srednji menadžment",
+      "q26_najvisa_pozicija_za_odrzivost__odjel_menadzmenta": "odjel menadžmenta",
+      "q26_najvisa_pozicija_za_odrzivost__menadzer": "menadžer",
+      "q26_najvisa_pozicija_za_odrzivost__vlasnik": "vlasnik",
+      "q26_najvisa_pozicija_za_odrzivost__subordinate": "subordinate",
+      "q26_najvisa_pozicija_za_odrzivost__nema_pozicije": "nemamo takvu poziciju u poslovnom pothvatu"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "One-hot kodiranje kategorijske varijable."
+  },
+  {
+    "question_id": 27,
+    "question_code": "q27_pomoc_za_odrzivost",
+    "section": "Upravljački aspekti održivosti",
+    "question_text": "Koja vrsta pomoći bi vam pomogla u promoviranju ciljeva održivosti u vašem poslovnom subjektu?",
+    "response_type": "multi_select",
+    "scale": null,
+    "encoding": "multi_hot",
+    "feature_names": [
+      "q27_pomoc_za_odrzivost__nepovratni_poticaji",
+      "q27_pomoc_za_odrzivost__beskamatni_zajmovi",
+      "q27_pomoc_za_odrzivost__savjeti_strucnjaka",
+      "q27_pomoc_za_odrzivost__jasan_zakonodavni_okvir",
+      "q27_pomoc_za_odrzivost__digitalna_rjesenja"
+    ],
+    "feature_labels": {
+      "q27_pomoc_za_odrzivost__nepovratni_poticaji": "nepovratni poticaji",
+      "q27_pomoc_za_odrzivost__beskamatni_zajmovi": "beskamatni zajmovi",
+      "q27_pomoc_za_odrzivost__savjeti_strucnjaka": "savjeti stručnjaka",
+      "q27_pomoc_za_odrzivost__jasan_zakonodavni_okvir": "jasan zakonodavni okvir",
+      "q27_pomoc_za_odrzivost__digitalna_rjesenja": "digitalna rješenja: elektronski izvještaji, primjeri dobre prakse..."
+    },
+    "has_other_option": true,
+    "other_indicator_feature": "q27_pomoc_za_odrzivost__other_selected",
+    "other_text_feature": "q27_pomoc_za_odrzivost__other_text",
+    "notes": "Multi-hot kodiranje; opcija Other razdvojena na indikator i dodatni tekst."
+  },
+  {
+    "question_id": 28,
+    "question_code": "q28_dugorocni_utjecaj_odrzivosti",
+    "section": "Upravljački aspekti održivosti",
+    "question_text": "Mislite li kako će više brige o održivosti imati dugoročni utjecaj na vaše poslovanje?",
+    "response_type": "single_select",
+    "scale": null,
+    "encoding": "one_hot",
+    "feature_names": [
+      "q28_dugorocni_utjecaj_odrzivosti__da",
+      "q28_dugorocni_utjecaj_odrzivosti__ne"
+    ],
+    "feature_labels": {
+      "q28_dugorocni_utjecaj_odrzivosti__da": "da",
+      "q28_dugorocni_utjecaj_odrzivosti__ne": "ne"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "One-hot kodiranje kategorijske varijable."
+  },
+  {
+    "question_id": 29,
+    "question_code": "q29_zadovoljstvo_ucinkovitoscu",
+    "section": "Investicije i financiranje",
+    "question_text": "Jeste li zadovoljni s učinkovitošću vašeg poslovnog subjekta?",
+    "response_type": "single_select",
+    "scale": null,
+    "encoding": "one_hot",
+    "feature_names": [
+      "q29_zadovoljstvo_ucinkovitoscu__da_profitabilno",
+      "q29_zadovoljstvo_ucinkovitoscu__da_uz_gubitak",
+      "q29_zadovoljstvo_ucinkovitoscu__ne"
+    ],
+    "feature_labels": {
+      "q29_zadovoljstvo_ucinkovitoscu__da_profitabilno": "da, jer je poslovanje profitabilno",
+      "q29_zadovoljstvo_ucinkovitoscu__da_uz_gubitak": "da, premda smo godinu završili s gubitkom",
+      "q29_zadovoljstvo_ucinkovitoscu__ne": "ne"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "One-hot kodiranje kategorijske varijable."
+  },
+  {
+    "question_id": 30,
+    "question_code": "q30_vrste_promjena",
+    "section": "Investicije i financiranje",
+    "question_text": "Koje ste vrste promjena (poboljšanja) napravili u posljednjih godinu dana u svom poslovnom pothvatu?",
+    "response_type": "multi_select",
+    "scale": null,
+    "encoding": "multi_hot",
+    "feature_names": [
+      "q30_vrste_promjena__bez_promjena",
+      "q30_vrste_promjena__uredjenje_prostora",
+      "q30_vrste_promjena__investicije_dugotrajna_imovina",
+      "q30_vrste_promjena__novi_proizvod",
+      "q30_vrste_promjena__istrazivanje_i_razvoj",
+      "q30_vrste_promjena__digitalizacija_procesa"
+    ],
+    "feature_labels": {
+      "q30_vrste_promjena__bez_promjena": "nismo napravili promjene",
+      "q30_vrste_promjena__uredjenje_prostora": "poboljšali smo prostor (uređenje prostora)",
+      "q30_vrste_promjena__investicije_dugotrajna_imovina": "nove investicije u dugotrajnu imovinu",
+      "q30_vrste_promjena__novi_proizvod": "razvili smo novi proizvod",
+      "q30_vrste_promjena__istrazivanje_i_razvoj": "istraživanje i razvoj",
+      "q30_vrste_promjena__digitalizacija_procesa": "digitalizirali smo procese"
+    },
+    "has_other_option": true,
+    "other_indicator_feature": "q30_vrste_promjena__other_selected",
+    "other_text_feature": "q30_vrste_promjena__other_text",
+    "notes": "Multi-hot kodiranje; opcija Other razdvojena na indikator i dodatni tekst."
+  },
+  {
+    "question_id": 31,
+    "question_code": "q31_motivi_promjena",
+    "section": "Investicije i financiranje",
+    "question_text": "Što vas je motiviralo na promjene (poboljšanja)?",
+    "response_type": "multi_select",
+    "scale": null,
+    "encoding": "multi_hot",
+    "feature_names": [
+      "q31_motivi_promjena__nista_poboljsano",
+      "q31_motivi_promjena__regulatorni_okviri",
+      "q31_motivi_promjena__zbog_konkurencije",
+      "q31_motivi_promjena__ideja_od_partnera",
+      "q31_motivi_promjena__bespovratna_sredstva",
+      "q31_motivi_promjena__briga_za_okolis",
+      "q31_motivi_promjena__energetska_ucinkovitost",
+      "q31_motivi_promjena__drustveni_ciljevi",
+      "q31_motivi_promjena__poslovni_razvoj",
+      "q31_motivi_promjena__moderne_tehnologije_inovacije",
+      "q31_motivi_promjena__covid_19"
+    ],
+    "feature_labels": {
+      "q31_motivi_promjena__nista_poboljsano": "nismo ništa poboljšali",
+      "q31_motivi_promjena__regulatorni_okviri": "regulatorni okviri",
+      "q31_motivi_promjena__zbog_konkurencije": "bilo je nužno zbog konkurencije",
+      "q31_motivi_promjena__ideja_od_partnera": "ideju smo dobili od poslovnih partnera",
+      "q31_motivi_promjena__bespovratna_sredstva": "dostupna su bespovratna sredstva",
+      "q31_motivi_promjena__briga_za_okolis": "briga za okoliš",
+      "q31_motivi_promjena__energetska_ucinkovitost": "energetska učinkovitost",
+      "q31_motivi_promjena__drustveni_ciljevi": "društveni ciljevi",
+      "q31_motivi_promjena__poslovni_razvoj": "poslovni razvoj",
+      "q31_motivi_promjena__moderne_tehnologije_inovacije": "moderne tehnologije, inovacije",
+      "q31_motivi_promjena__covid_19": "COVID-19"
+    },
+    "has_other_option": true,
+    "other_indicator_feature": "q31_motivi_promjena__other_selected",
+    "other_text_feature": "q31_motivi_promjena__other_text",
+    "notes": "Multi-hot kodiranje; opcija Other razdvojena na indikator i dodatni tekst."
+  },
+  {
+    "question_id": 32,
+    "question_code": "q32_financiranje_aktivnosti",
+    "section": "Investicije i financiranje",
+    "question_text": "Kako obično financirate svoje poslovne aktivnosti?",
+    "response_type": "single_select",
+    "scale": null,
+    "encoding": "one_hot",
+    "feature_names": [
+      "q32_financiranje_aktivnosti__nista_poboljsano",
+      "q32_financiranje_aktivnosti__vlastita_sredstva",
+      "q32_financiranje_aktivnosti__vlastita_i_eksterna",
+      "q32_financiranje_aktivnosti__programi_rast_razvoj",
+      "q32_financiranje_aktivnosti__bespovratna_sredstva",
+      "q32_financiranje_aktivnosti__hbor",
+      "q32_financiranje_aktivnosti__samo_eksterna"
+    ],
+    "feature_labels": {
+      "q32_financiranje_aktivnosti__nista_poboljsano": "nismo ništa poboljšali",
+      "q32_financiranje_aktivnosti__vlastita_sredstva": "iz vlastitih sredstava",
+      "q32_financiranje_aktivnosti__vlastita_i_eksterna": "iz vlastitih i eksternih (krediti, zajmovi,...) sredstava",
+      "q32_financiranje_aktivnosti__programi_rast_razvoj": "iz programa za rast i razvoj",
+      "q32_financiranje_aktivnosti__bespovratna_sredstva": "iz bespovratnih sredstava",
+      "q32_financiranje_aktivnosti__hbor": "ponajprije iz sredstava HBOR-a",
+      "q32_financiranje_aktivnosti__samo_eksterna": "samo iz eksternih sredstava"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "One-hot kodiranje kategorijske varijable."
+  },
+  {
+    "question_id": 33,
+    "question_code": "q33_odrzivost_financijski_rezultati",
+    "section": "Investicije i financiranje",
+    "question_text": "Postoji li, prema vašem mišljenju, povezanost između ciljeva održivosti i financijskih rezultata?",
+    "response_type": "single_select",
+    "scale": null,
+    "encoding": "one_hot",
+    "feature_names": [
+      "q33_odrzivost_financijski_rezultati__odrzivost_raste_financije_rastu",
+      "q33_odrzivost_financijski_rezultati__nema_poveznice",
+      "q33_odrzivost_financijski_rezultati__financije_rastu_odrzivost_raste",
+      "q33_odrzivost_financijski_rezultati__obrnuto_proporcionalna"
+    ],
+    "feature_labels": {
+      "q33_odrzivost_financijski_rezultati__odrzivost_raste_financije_rastu": "s rastom održivosti rastu i financijski rezultati",
+      "q33_odrzivost_financijski_rezultati__nema_poveznice": "nema poveznice između održivosti i financijskih rezultata",
+      "q33_odrzivost_financijski_rezultati__financije_rastu_odrzivost_raste": "s rastom financijskih rezultata, rastu i rezultati održivosti poslovanja",
+      "q33_odrzivost_financijski_rezultati__obrnuto_proporcionalna": "poveznica između održivosti i financijskih rezultata je obrnuto proporcionalna (kako jedno raste, tako drugo opada)"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "One-hot kodiranje kategorijske varijable."
+  },
+  {
+    "question_id": 34,
+    "question_code": "q34_eksterna_sredstva_3_godine",
+    "section": "Investicije i financiranje",
+    "question_text": "Koje je vrste eksternih sredstava vaš poslovni subjekt koristio u posljednje 3 godine?",
+    "response_type": "multi_select",
+    "scale": null,
+    "encoding": "multi_hot",
+    "feature_names": [
+      "q34_eksterna_sredstva_3_godine__eu_konkurentnost",
+      "q34_eksterna_sredstva_3_godine__eu_energetska_ucinkovitost",
+      "q34_eksterna_sredstva_3_godine__npoo",
+      "q34_eksterna_sredstva_3_godine__lokalni_poticaji",
+      "q34_eksterna_sredstva_3_godine__banke_sufinancirana_kamata",
+      "q34_eksterna_sredstva_3_godine__hbor",
+      "q34_eksterna_sredstva_3_godine__ruralni_razvoj",
+      "q34_eksterna_sredstva_3_godine__hzz_zeleno_digitalno",
+      "q34_eksterna_sredstva_3_godine__hzz_zaposljavanje",
+      "q34_eksterna_sredstva_3_godine__zaposljavanje_osoba_s_invaliditetom",
+      "q34_eksterna_sredstva_3_godine__efop",
+      "q34_eksterna_sredstva_3_godine__drugi_eu_fondovi",
+      "q34_eksterna_sredstva_3_godine__bez_eksternih_sredstava"
+    ],
+    "feature_labels": {
+      "q34_eksterna_sredstva_3_godine__eu_konkurentnost": "Sredstva EU fondova za poticanje konkurentnosti",
+      "q34_eksterna_sredstva_3_godine__eu_energetska_ucinkovitost": "Sredstva EU fondova za jačanje energetske učinkovitosti",
+      "q34_eksterna_sredstva_3_godine__npoo": "Nacionalni program za oporavak i otpornost (NPOO)",
+      "q34_eksterna_sredstva_3_godine__lokalni_poticaji": "Poticaje na lokalnoj razini (Županija, Grad)",
+      "q34_eksterna_sredstva_3_godine__banke_sufinancirana_kamata": "Kreditna sredstva sa sufinanciranom kamatnom stopom (poslovne banke)",
+      "q34_eksterna_sredstva_3_godine__hbor": "Kreditna sredstva Hrvatske banke za obnovu i razvitak (HBOR)",
+      "q34_eksterna_sredstva_3_godine__ruralni_razvoj": "Programe ruralnog razvoja",
+      "q34_eksterna_sredstva_3_godine__hzz_zeleno_digitalno": "Potpore za zapošljavanje zeleno/digitalno (HZZ)",
+      "q34_eksterna_sredstva_3_godine__hzz_zaposljavanje": "Potpore za zapošljavanje (HZZ)",
+      "q34_eksterna_sredstva_3_godine__zaposljavanje_osoba_s_invaliditetom": "Sredstva iz programa za zapošljavanje osoba s invaliditetom",
+      "q34_eksterna_sredstva_3_godine__efop": "Human Resources Development Operational Program (EFOP)",
+      "q34_eksterna_sredstva_3_godine__drugi_eu_fondovi": "Sredstva drugih EU fondova (poput ribarstva i dr.)",
+      "q34_eksterna_sredstva_3_godine__bez_eksternih_sredstava": "Poslovni subjekt nije koristio nikakva sredstva"
+    },
+    "has_other_option": true,
+    "other_indicator_feature": "q34_eksterna_sredstva_3_godine__other_selected",
+    "other_text_feature": "q34_eksterna_sredstva_3_godine__other_text",
+    "notes": "Multi-hot kodiranje; opcija Other razdvojena na indikator i dodatni tekst."
+  },
+  {
+    "question_id": 35,
+    "question_code": "q35_culi_za_un_sdg",
+    "section": "UN Ciljevi održivog razvoja (UN SDG)",
+    "question_text": "Jeste li ranije čuli za UN ciljeve održivog razvoja?",
+    "response_type": "single_select",
+    "scale": null,
+    "encoding": "one_hot",
+    "feature_names": [
+      "q35_culi_za_un_sdg__da",
+      "q35_culi_za_un_sdg__ne"
+    ],
+    "feature_labels": {
+      "q35_culi_za_un_sdg__da": "da",
+      "q35_culi_za_un_sdg__ne": "ne"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "One-hot kodiranje kategorijske varijable."
+  },
+  {
+    "question_id": 36,
+    "question_code": "q36_relevantnost_sdg",
+    "section": "UN Ciljevi održivog razvoja (UN SDG)",
+    "question_text": "Koliko je sljedeći cilj releventan za vaše poslovanje i vaš poslovni subjekt?",
+    "response_type": "matrix_single_choice",
+    "scale": "likert_1_5",
+    "encoding": "matrix_ordinal_1_5",
+    "feature_names": [
+      "q36_relevantnost_sdg__sdg01_no_poverty",
+      "q36_relevantnost_sdg__sdg02_zero_hunger",
+      "q36_relevantnost_sdg__sdg03_good_health",
+      "q36_relevantnost_sdg__sdg04_quality_education",
+      "q36_relevantnost_sdg__sdg05_gender_equality",
+      "q36_relevantnost_sdg__sdg06_clean_water",
+      "q36_relevantnost_sdg__sdg07_clean_energy",
+      "q36_relevantnost_sdg__sdg08_decent_work",
+      "q36_relevantnost_sdg__sdg09_industry_innovation",
+      "q36_relevantnost_sdg__sdg10_reduced_inequalities",
+      "q36_relevantnost_sdg__sdg11_sustainable_cities",
+      "q36_relevantnost_sdg__sdg12_responsible_consumption",
+      "q36_relevantnost_sdg__sdg13_climate_action",
+      "q36_relevantnost_sdg__sdg14_life_below_water",
+      "q36_relevantnost_sdg__sdg15_life_on_land",
+      "q36_relevantnost_sdg__sdg16_peace_justice",
+      "q36_relevantnost_sdg__sdg17_partnerships"
+    ],
+    "feature_labels": {
+      "q36_relevantnost_sdg__sdg01_no_poverty": "Cilj 1: Iskorijeniti siromaštvo svuda i u svim oblicima",
+      "q36_relevantnost_sdg__sdg02_zero_hunger": "Cilj 2: Iskorijeniti glad, postići sigurnost hrane i poboljšanu ishranu te promovirati održivu poljoprivredu",
+      "q36_relevantnost_sdg__sdg03_good_health": "Cilj 3: Zdravlje – Osigurati zdrav život i promovirati blagostanje za ljude svih generacija",
+      "q36_relevantnost_sdg__sdg04_quality_education": "Cilj 4: Osigurati uključivo i kvalitetno obrazovanje te promovirati mogućnosti cjeloživotnog učenja",
+      "q36_relevantnost_sdg__sdg05_gender_equality": "Cilj 5: Postići rodnu ravnopravnost i osnažiti sve žene i djevojke",
+      "q36_relevantnost_sdg__sdg06_clean_water": "Cilj 6: Osigurati pristup pitkoj vodi za sve, održivo upravljati vodama te osigurati higijenske uvjete za sve",
+      "q36_relevantnost_sdg__sdg07_clean_energy": "Cilj 7: Osigurati pristup pouzdanoj, održivoj i suvremenoj energiji po pristupačnim cijenama za sve",
+      "q36_relevantnost_sdg__sdg08_decent_work": "Cilj 8: Promovirati uključiv i održiv gospodarski rast, punu zaposlenost i dostojanstven rad za sve",
+      "q36_relevantnost_sdg__sdg09_industry_innovation": "Cilj 9: Izgraditi prilagodljivu infrastrukturu, promovirati uključivu i održivu industrijalizaciju i poticati inovativnost",
+      "q36_relevantnost_sdg__sdg10_reduced_inequalities": "Cilj 10: Smanjiti nejednakost unutar i između država",
+      "q36_relevantnost_sdg__sdg11_sustainable_cities": "Cilj 11: Učiniti gradove i naselja uključivim, sigurnim, prilagodljivim i održivim",
+      "q36_relevantnost_sdg__sdg12_responsible_consumption": "Cilj 12: Osigurati održive oblike potrošnje i proizvodnje",
+      "q36_relevantnost_sdg__sdg13_climate_action": "Cilj 13: Poduzeti hitne akcije u borbi protiv klimatskih promjena i njihovih posljedica",
+      "q36_relevantnost_sdg__sdg14_life_below_water": "Cilj 14: Očuvati i održivo koristiti oceane, mora i morske resurse za održiv razvoj",
+      "q36_relevantnost_sdg__sdg15_life_on_land": "Cilj 15: Zaštititi, uspostaviti i promovirati održivo korištenje kopnenih ekosustava, održivo upravljati šumama, suzbiti dezertifikaciju, zaustaviti degradaciju tla te spriječiti uništavanje biološke raznolikosti",
+      "q36_relevantnost_sdg__sdg16_peace_justice": "Cilj 16: Promovirati miroljubiva i uključiva društva za održivi razvoj, osigurati pristup pravdi za sve i izgraditi učinkovite, odgovorne i uključive institucije na svim razinama",
+      "q36_relevantnost_sdg__sdg17_partnerships": "Cilj 17: Ojačati načine provedbe te učvrstiti globalno partnerstvo za održivi razvoj"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "Svaki SDG red matrice postaje zaseban ordinalni stupac 1-5.",
+    "value_domain": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "question_id": 37,
+    "question_code": "q37_sdg_vezani_uz_poslovanje",
+    "section": "UN Ciljevi održivog razvoja (UN SDG)",
+    "question_text": "Koji su UN ciljevi održivog razvoja trenutno direktno vezani uz vaše poslovanje i vaš poslovni subjekt?",
+    "response_type": "multi_select",
+    "scale": null,
+    "encoding": "multi_hot",
+    "feature_names": [
+      "q37_sdg_vezani_uz_poslovanje__sdg01_no_poverty",
+      "q37_sdg_vezani_uz_poslovanje__sdg02_zero_hunger",
+      "q37_sdg_vezani_uz_poslovanje__sdg03_good_health",
+      "q37_sdg_vezani_uz_poslovanje__sdg04_quality_education",
+      "q37_sdg_vezani_uz_poslovanje__sdg05_gender_equality",
+      "q37_sdg_vezani_uz_poslovanje__sdg06_clean_water",
+      "q37_sdg_vezani_uz_poslovanje__sdg07_clean_energy",
+      "q37_sdg_vezani_uz_poslovanje__sdg08_decent_work",
+      "q37_sdg_vezani_uz_poslovanje__sdg09_industry_innovation",
+      "q37_sdg_vezani_uz_poslovanje__sdg10_reduced_inequalities",
+      "q37_sdg_vezani_uz_poslovanje__sdg11_sustainable_cities",
+      "q37_sdg_vezani_uz_poslovanje__sdg12_responsible_consumption",
+      "q37_sdg_vezani_uz_poslovanje__sdg13_climate_action",
+      "q37_sdg_vezani_uz_poslovanje__sdg14_life_below_water",
+      "q37_sdg_vezani_uz_poslovanje__sdg15_life_on_land",
+      "q37_sdg_vezani_uz_poslovanje__sdg16_peace_justice",
+      "q37_sdg_vezani_uz_poslovanje__sdg17_partnerships",
+      "q37_sdg_vezani_uz_poslovanje__none_directly_related"
+    ],
+    "feature_labels": {
+      "q37_sdg_vezani_uz_poslovanje__sdg01_no_poverty": "Iskorijeniti siromaštvo svuda i u svim oblicima",
+      "q37_sdg_vezani_uz_poslovanje__sdg02_zero_hunger": "Iskorijeniti glad, postići sigurnost hrane i poboljšanu ishranu te promovirati održivu poljoprivredu",
+      "q37_sdg_vezani_uz_poslovanje__sdg03_good_health": "Zdravlje – Osigurati zdrav život i promovirati blagostanje za ljude svih generacija",
+      "q37_sdg_vezani_uz_poslovanje__sdg04_quality_education": "Osigurati uključivo i kvalitetno obrazovanje te promovirati mogućnosti cjeloživotnog učenja",
+      "q37_sdg_vezani_uz_poslovanje__sdg05_gender_equality": "Postići rodnu ravnopravnost i osnažiti sve žene i djevojke",
+      "q37_sdg_vezani_uz_poslovanje__sdg06_clean_water": "Osigurati pristup pitkoj vodi za sve, održivo upravljati vodama te osigurati higijenske uvjete za sve",
+      "q37_sdg_vezani_uz_poslovanje__sdg07_clean_energy": "Osigurati pristup pouzdanoj, održivoj i suvremenoj energiji po pristupačnim cijenama za sve",
+      "q37_sdg_vezani_uz_poslovanje__sdg08_decent_work": "Promovirati uključiv i održiv gospodarski rast, punu zaposlenost i dostojanstven rad za sve",
+      "q37_sdg_vezani_uz_poslovanje__sdg09_industry_innovation": "Izgraditi prilagodljivu infrastrukturu, promovirati uključivu i održivu industrijalizaciju i poticati inovativnost",
+      "q37_sdg_vezani_uz_poslovanje__sdg10_reduced_inequalities": "Smanjiti nejednakost unutar i između država",
+      "q37_sdg_vezani_uz_poslovanje__sdg11_sustainable_cities": "Učiniti gradove i naselja uključivim, sigurnim, prilagodljivim i održivim",
+      "q37_sdg_vezani_uz_poslovanje__sdg12_responsible_consumption": "Osigurati održive oblike potrošnje i proizvodnje",
+      "q37_sdg_vezani_uz_poslovanje__sdg13_climate_action": "Poduzeti hitne akcije u borbi protiv klimatskih promjena i njihovih posljedica",
+      "q37_sdg_vezani_uz_poslovanje__sdg14_life_below_water": "Očuvati i održivo koristiti oceane, mora i morske resurse za održiv razvoj",
+      "q37_sdg_vezani_uz_poslovanje__sdg15_life_on_land": "Zaštititi, uspostaviti i promovirati održivo korištenje kopnenih ekosustava, održivo upravljati šumama, suzbiti dezertifikaciju, zaustaviti degradaciju tla te spriječiti uništavanje biološke raznolikosti",
+      "q37_sdg_vezani_uz_poslovanje__sdg16_peace_justice": "Promovirati miroljubiva i uključiva društva za održivi razvoj, osigurati pristup pravdi za sve i izgraditi učinkovite, odgovorne i uključive institucije na svim razinama",
+      "q37_sdg_vezani_uz_poslovanje__sdg17_partnerships": "Ojačati načine provedbe te učvrstiti globalno partnerstvo za održivi razvoj",
+      "q37_sdg_vezani_uz_poslovanje__none_directly_related": "Nijedan od navedenih ciljeva nije direktno vezan uz naše poslovanje"
+    },
+    "has_other_option": false,
+    "other_indicator_feature": null,
+    "other_text_feature": null,
+    "notes": "Svaka označena opcija postaje zaseban binarni stupac."
+  }
+]

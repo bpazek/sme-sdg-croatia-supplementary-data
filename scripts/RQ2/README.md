@@ -15,7 +15,7 @@ The analysis examines motivational, institutional, resource-related and value-ba
 * `RQ2_step_4_nontautological_multivariate_models.py` – estimates non-tautological multivariate models for `SDG_count`. It intentionally excludes `Sustainable_success_orientation` from the main model because this variable directly reflects internal strategic alignment with sustainability.
 * `RQ2_step_5_nontautological_graphs.py` – generates the final RQ2 figures aligned with the non-tautological modelling approach.
 
-## Expected output files (see Excel_Files folder)
+## Expected output files (see Excel_Files_Results folder)
 
 Running the scripts sequentially produces the following main output files:
 

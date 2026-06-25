@@ -19,7 +19,7 @@ The Excel output includes tables for:
 * year of foundation, number of employees, company age and log employees;
 * measurable business indicators;
 * sustainability in strategy;
-* quality/sustainability standards and CSR elements;
+* quality/sustainability standards and CSR (corporate social responsibility) elements;
 * sustainability goal measurement;
 * sustainability-related position;
 * prior awareness of UN SDGs;
